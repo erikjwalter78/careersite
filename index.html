@@ -28,7 +28,6 @@
       transition: transform 0.3s ease, border-color 0.3s ease;
     }
     .glass-card:hover {
-      /* CHANGED TO ROYAL BLUE */
       border-color: #2b6cb0;
       transform: translateY(-2px);
     }
@@ -42,7 +41,6 @@
       transform: translateY(0);
     }
     .metric-value {
-      /* CHANGED TO ROYAL BLUE */
       color: #4299e1;
       font-weight: 800;
     }
@@ -73,6 +71,15 @@
   </header>
 
   <main class="max-w-6xl mx-auto space-y-8">
+
+    <section class="fade-in mb-8">
+      <div class="glass-card p-6 border-l-4 border-blue-600">
+        <h3 class="text-white text-xl font-bold mb-3 italic text-blue-400">Professional Summary</h3>
+        <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+          Senior Learning and Enablement professional with <strong>8+ years</strong> of experience delivering scalable onboarding, sales enablement, and leadership development programs within a Fortune 500 environment, supported by <strong>13+ years</strong> of progressive experience at Verizon Communications across sales, retail leadership, and enterprise training roles. Proven ability to translate business strategy into practical learning experiences that accelerate ramp time, improve performance metrics, and support measurable business outcomes. Trusted partner to senior leaders and cross-functional stakeholders, with deep expertise in facilitation, program execution, and learning effectiveness measurement.
+        </p>
+      </div>
+    </section>
     
     <section class="grid grid-cols-2 md:grid-cols-4 gap-4 fade-in">
       <div class="glass-card p-4 text-center">
@@ -199,7 +206,6 @@
           label: 'Skill Proficiency',
           data: [90, 90, 87, 76, 94, 81], 
           fill: true,
-          /* CHANGED RADAR COLORS TO ROYAL BLUE */
           backgroundColor: 'rgba(66, 153, 225, 0.15)',
           borderColor: '#4299e1',
           pointBackgroundColor: '#4299e1',
