@@ -71,7 +71,7 @@
       <div class="lg:col-span-1 glass-card p-6">
         <h3 class="text-white text-xl font-bold mb-4 border-b border-gray-700 pb-2">Professional Summary</h3>
         <p class="text-gray-400 leading-relaxed text-sm">
-          Senior Learning and Enablement professional with 8+ years of experience delivering scalable onboarding, sales enablement, and leadership development programs within a Fortune 500 environment. Supported by 13+ years of progressive experience at Verizon across sales and leadership roles.
+          Senior Learning and Enablement professional with 8+ years of experience delivering scalable onboarding, sales enablement, and leadership development programs within a Fortune 500 environment. Proven ability to translate business strategy into practical learning experiences that accelerate ramp time and improve performance metrics.
         </p>
 
         <div class="mt-6 space-y-3">
@@ -158,7 +158,7 @@
 
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-in">
       <div class="glass-card p-6">
-        <h3 class="text-white font-bold mb-4">Strategic Focus Areas</h3>
+        <h3 class="text-white font-bold mb-4">Territory Focus</h3>
 
         <div class="space-y-4">
           <div>
@@ -217,7 +217,6 @@
   </main>
 
   <script>
-    // Reveal animations on scroll
     const observerOptions = { threshold: 0.1 };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -227,7 +226,6 @@
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // Radar Chart - Competency Profile
     const radarCtx = document.getElementById('radarChart').getContext('2d');
     new Chart(radarCtx, {
       type: 'radar',
@@ -242,7 +240,7 @@
         ],
         datasets: [{
           label: 'Competency Level',
-          data: [95, 95, 88, 97, 92, 95], // Updated values from user
+          data: [95, 95, 88, 97, 92, 95], // Adjusted Measurement to 95
           fill: true,
           backgroundColor: 'rgba(88, 166, 255, 0.2)',
           borderColor: '#58a6ff',
@@ -259,7 +257,7 @@
           r: {
             angleLines: { color: '#30363d' },
             grid: { color: '#30363d' },
-            pointLabels: { color: '#8b949e', font: { size: 11 } },
+            pointLabels: { color: '#8b949e', font: { size: 10 } },
             ticks: { display: false, max: 100 }
           }
         },
@@ -269,14 +267,13 @@
       }
     });
 
-    // Doughnut Chart - Weekly Activity
     const activityCtx = document.getElementById('activityChart').getContext('2d');
     new Chart(activityCtx, {
       type: 'doughnut',
       data: {
         labels: ['Facilitation', 'Execution', 'Stakeholders', 'Measurement'],
         datasets: [{
-          data: [25, 25, 20, 30], // Updated values from user
+          data: [25, 25, 20, 30],
           backgroundColor: ['#1f6feb', '#388bfd', '#79c0ff', '#1245a8'],
           borderColor: '#0d1117',
           borderWidth: 2
