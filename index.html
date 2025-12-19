@@ -21,7 +21,7 @@
       transition: transform 0.3s ease, border-color 0.3s ease;
     }
     .glass-card:hover {
-      border-color: #58a6ff;
+      border-color: #00f2ff; /* Subtle Cyan Pop */
       transform: translateY(-2px);
     }
     .fade-in {
@@ -34,8 +34,11 @@
       transform: translateY(0);
     }
     .metric-value {
-      color: #58a6ff;
+      color: #00f2ff; /* Electric Cyan */
       font-weight: 800;
+    }
+    .accent-cyan {
+      color: #00f2ff;
     }
   </style>
 </head>
@@ -47,15 +50,15 @@
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">Erik James Walter</h1>
         <p class="text-xl md:text-2xl text-blue-400 font-medium">Senior Trainer, Learning & Enablement</p>
         <div class="flex gap-4 mt-4 text-sm text-gray-400">
-          <span><i class="fas fa-map-marker-alt mr-2"></i>Pennsylvania, USA</span>
-          <span><i class="fas fa-briefcase mr-2"></i>Fortune 500 Enterprise Experience</span>
+          <span><i class="fas fa-map-marker-alt mr-2 accent-cyan"></i>Pennsylvania, USA</span>
+          <span><i class="fas fa-briefcase mr-2 accent-cyan"></i>Fortune 500 Enterprise Experience</span>
         </div>
       </div>
 
       <div class="flex flex-wrap gap-2">
-        <span class="px-3 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 rounded-full text-sm font-semibold">Master Trainer</span>
-        <span class="px-3 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 rounded-full text-sm font-semibold">Program Scaling</span>
-        <span class="px-3 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 rounded-full text-sm font-semibold">Instructional Media</span>
+        <span class="px-3 py-1 bg-cyan-900/20 border border-cyan-500/50 text-cyan-400 rounded-full text-sm font-semibold">Performance Consulting</span>
+        <span class="px-3 py-1 bg-cyan-900/20 border border-cyan-500/50 text-cyan-400 rounded-full text-sm font-semibold">Program Scaling</span>
+        <span class="px-3 py-1 bg-cyan-900/20 border border-cyan-500/50 text-cyan-400 rounded-full text-sm font-semibold">Strategic Enablement</span>
       </div>
     </div>
   </header>
@@ -84,29 +87,34 @@
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-in">
       <div class="glass-card p-6">
         <h3 class="text-white text-xl font-bold mb-6 italic">Competency Profile</h3>
-        <div class="h-64">
+        <div class="h-80">
           <canvas id="radarChart"></canvas>
         </div>
       </div>
+      
       <div class="glass-card p-6">
-        <h3 class="text-white text-xl font-bold mb-6 italic">Creative Media Edge</h3>
-        <p class="text-sm text-gray-400 mb-6">Leveraging a B.S. in Digital Media Production to design interactive, visual-first learning experiences.</p>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="flex items-center gap-3 p-3 bg-gray-800/50 rounded border border-gray-700">
-            <i class="fas fa-video text-blue-400"></i>
-            <span class="text-xs font-bold uppercase">Video Assets</span>
+        <h3 class="text-white text-xl font-bold mb-6 italic">Strategic Value Proposition</h3>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="mt-1"><i class="fas fa-handshake accent-cyan text-xl"></i></div>
+            <div>
+              <h4 class="text-white font-bold text-sm uppercase tracking-wider">Performance Consulting</h4>
+              <p class="text-xs text-gray-400 mt-1">Bridging the gap between business strategy and frontline execution through targeted Training Needs Analysis (TNA).</p>
+            </div>
           </div>
-          <div class="flex items-center gap-3 p-3 bg-gray-800/50 rounded border border-gray-700">
-            <i class="fas fa-palette text-blue-400"></i>
-            <span class="text-xs font-bold uppercase">Graphic Design</span>
+          <div class="flex gap-4">
+            <div class="mt-1"><i class="fas fa-chart-line accent-cyan text-xl"></i></div>
+            <div>
+              <h4 class="text-white font-bold text-sm uppercase tracking-wider">Operational Readiness</h4>
+              <p class="text-xs text-gray-400 mt-1">Ensuring organizational agility by standardizing facilitation and certifying trainer networks for scalable deployment.</p>
+            </div>
           </div>
-          <div class="flex items-center gap-3 p-3 bg-gray-800/50 rounded border border-gray-700">
-            <i class="fas fa-object-group text-blue-400"></i>
-            <span class="text-xs font-bold uppercase">Instructional Design</span>
-          </div>
-          <div class="flex items-center gap-3 p-3 bg-gray-800/50 rounded border border-gray-700">
-            <i class="fas fa-film text-blue-400"></i>
-            <span class="text-xs font-bold uppercase">Media Editing</span>
+          <div class="flex gap-4">
+            <div class="mt-1"><i class="fas fa-bullseye accent-cyan text-xl"></i></div>
+            <div>
+              <h4 class="text-white font-bold text-sm uppercase tracking-wider">Behavioral Transformation</h4>
+              <p class="text-xs text-gray-400 mt-1">Driving sustained KPI growth by aligning performance expectations with structured coaching and reinforcement.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -117,33 +125,33 @@
         <i class="fas fa-trophy text-yellow-500 mr-3"></i> Major Project Wins
       </h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="glass-card p-6 border-l-4 border-blue-500">
-          <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">National Impact</span>
+        <div class="glass-card p-6 border-l-4 border-cyan-500">
+          <span class="accent-cyan text-xs font-bold uppercase tracking-widest">National Impact</span>
           <h4 class="text-white font-bold mt-2 mb-3 text-lg italic">12.4% Conversion Lift</h4>
           <p class="text-sm text-gray-400">Partnered with retail leaders to modernize floor management training, yielding a nationwide increase in conversion rates within 180 days.</p>
         </div>
-        <div class="glass-card p-6 border-l-4 border-blue-500">
-          <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">Performance Strategy</span>
+        <div class="glass-card p-6 border-l-4 border-cyan-500">
+          <span class="accent-cyan text-xs font-bold uppercase tracking-widest">Performance Strategy</span>
           <h4 class="text-white font-bold mt-2 mb-3 text-lg italic">Book of Business Growth</h4>
           <p class="text-sm text-gray-400">Designed training that increased gross adds per 40-hour FTE from 20.6 to 23.7 within 60 days of program deployment.</p>
         </div>
-        <div class="glass-card p-6 border-l-4 border-blue-500">
-          <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">Enablement Scaling</span>
+        <div class="glass-card p-6 border-l-4 border-cyan-500">
+          <span class="accent-cyan text-xs font-bold uppercase tracking-widest">Enablement Scaling</span>
           <h4 class="text-white font-bold mt-2 mb-3 text-lg italic">Master Trainer (2025)</h4>
           <p class="text-sm text-gray-400">Certifying 21 trainers for the "Retail Ready" program to ensure high-quality, scalable enterprise onboarding.</p>
         </div>
-        <div class="glass-card p-6 border-l-4 border-blue-500">
-          <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">Operational Efficiency</span>
+        <div class="glass-card p-6 border-l-4 border-cyan-500">
+          <span class="accent-cyan text-xs font-bold uppercase tracking-widest">Operational Efficiency</span>
           <h4 class="text-white font-bold mt-2 mb-3 text-lg italic">20% Ramp-Time Reduction</h4>
           <p class="text-sm text-gray-400">Onboarded 700+ employees using redesigned curriculum focused on accelerating role readiness.</p>
         </div>
-        <div class="glass-card p-6 border-l-4 border-blue-500">
-          <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">Leadership Recognition</span>
+        <div class="glass-card p-6 border-l-4 border-cyan-500">
+          <span class="accent-cyan text-xs font-bold uppercase tracking-widest">Leadership Recognition</span>
           <h4 class="text-white font-bold mt-2 mb-3 text-lg italic">90%+ Medallia NPS</h4>
           <p class="text-sm text-gray-400">Ranked as 1 of only 16 stores nationwide for customer excellence, earning the Excellence in Leadership award.</p>
         </div>
-        <div class="glass-card p-6 border-l-4 border-blue-500">
-          <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">Talent Development</span>
+        <div class="glass-card p-6 border-l-4 border-cyan-500">
+          <span class="accent-cyan text-xs font-bold uppercase tracking-widest">Talent Development</span>
           <h4 class="text-white font-bold mt-2 mb-3 text-lg italic">8 Leadership Promotions</h4>
           <p class="text-sm text-gray-400">Coached and developed direct reports into successful management promotions through structured skill development.</p>
         </div>
@@ -152,8 +160,8 @@
 
     <footer class="text-center py-12 border-t border-gray-800 fade-in">
       <div class="flex justify-center gap-8 mb-6">
-        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="mailto:erik@example.com" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fas fa-envelope fa-2x"></i></a>
+        <a href="#" class="text-gray-400 hover:accent-cyan transition-colors"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="mailto:erik@example.com" class="text-gray-400 hover:accent-cyan transition-colors"><i class="fas fa-envelope fa-2x"></i></a>
       </div>
       <p class="text-gray-500 text-sm italic">Erik James Walter • Senior Trainer • Verizon Enablement</p>
       <p class="text-xs text-gray-600 mt-2">B.S. Digital Media Production • Art Institute of Pittsburgh</p>
@@ -169,7 +177,7 @@
     }, observerOptions);
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // RADAR CHART - AUTHENTIC SELF-ASSESSMENT DATA
+    // RECALIBRATED RADAR CHART WITH CORRECT VISUAL PROPORTIONS
     const radarCtx = document.getElementById('radarChart').getContext('2d');
     new Chart(radarCtx, {
       type: 'radar',
@@ -177,13 +185,16 @@
         labels: ['Onboarding', 'Facilitation', 'Sales Strategy', 'Leadership Dev', 'Program Scaling', 'Measurement'],
         datasets: [{
           label: 'Skill Proficiency',
-          data: [90, 90, 87, 76, 94, 81], // YOUR CUSTOM SELF-ASSESSMENT SCORES
+          data: [90, 90, 87, 76, 94, 81], 
           fill: true,
-          backgroundColor: 'rgba(88, 166, 255, 0.2)',
-          borderColor: '#58a6ff',
-          pointBackgroundColor: '#58a6ff',
+          backgroundColor: 'rgba(0, 242, 255, 0.15)',
+          borderColor: '#00f2ff',
+          pointBackgroundColor: '#00f2ff',
           pointBorderColor: '#fff',
-          borderWidth: 2
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: '#00f2ff',
+          borderWidth: 3,
+          pointRadius: 4
         }]
       },
       options: {
@@ -191,9 +202,33 @@
         maintainAspectRatio: false,
         scales: {
           r: {
-            min: 0,
-            max: 100,
             angleLines: { color: '#30363d' },
             grid: { color: '#30363d' },
-            pointLabels: { color: '#8b949e', font: { size: 11, weight: 'bold' } },
-            ticks: { display: false
+            suggestedMin: 0,
+            suggestedMax: 100,
+            pointLabels: { 
+                color: '#8b949e', 
+                font: { size: 11, weight: 'bold' },
+                padding: 15
+            },
+            ticks: { 
+                display: false,
+                stepSize: 20 
+            }
+          }
+        },
+        plugins: { 
+            legend: { display: false },
+            tooltip: {
+                backgroundColor: '#161b22',
+                titleColor: '#00f2ff',
+                bodyColor: '#fff',
+                borderColor: '#30363d',
+                borderWidth: 1
+            }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
