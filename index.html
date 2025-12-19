@@ -48,15 +48,15 @@
         <p class="text-xl md:text-2xl text-blue-400 font-medium">Senior Trainer, Learning & Enablement</p>
         <div class="flex gap-4 mt-4 text-sm text-gray-400">
           <span><i class="fas fa-map-marker-alt mr-2"></i>Pennsylvania, USA</span>
-          <span><i class="fas fa-briefcase mr-2"></i>Fortune 500 Enterprise Experience</span>
+          <span><i class="fas fa-briefcase mr-2"></i>Verizon Enterprise Experience</span>
         </div>
       </div>
 
       <div class="flex flex-wrap gap-2">
-        <span class="px-3 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 rounded-full text-sm font-semibold">Sales Enablement</span>
-        <span class="px-3 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 rounded-full text-sm font-semibold">Leadership Development</span>
-        <span class="px-3 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 rounded-full text-sm font-semibold">Program Execution</span>
-        <span class="px-3 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 rounded-full text-sm font-semibold">Measurement</span>
+        <span class="px-3 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 rounded-full text-sm font-semibold">Master Trainer</span>
+        <span class="px-3 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 rounded-full text-sm font-semibold">Retail Leadership</span>
+        <span class="px-3 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 rounded-full text-sm font-semibold">Sales Strategy</span>
+        <span class="px-3 py-1 bg-blue-900/30 border border-blue-500/50 text-blue-400 rounded-full text-sm font-semibold">Performance Analytics</span>
       </div>
     </div>
   </header>
@@ -66,40 +66,121 @@
       <div class="lg:col-span-1 glass-card p-6">
         <h3 class="text-white text-xl font-bold mb-4 border-b border-gray-700 pb-2">Professional Summary</h3>
         <p class="text-gray-400 leading-relaxed text-sm">
-          Senior Learning and Enablement professional with 8+ years of experience delivering scalable onboarding and leadership development. Supported by 13+ years of progressive experience at Verizon across sales leadership and enterprise training roles.
+          Senior Learning and Enablement professional with 8+ years of experience delivering scalable onboarding and leadership programs. Former Retail Manager and Master Trainer at Verizon, recognized for driving a 12.4% increase in national sales conversion and leading store teams to Directors Club honors.
         </p>
         <div class="mt-6 space-y-3">
           <div class="flex items-center text-sm">
-            <i class="fas fa-certificate text-blue-500 w-6"></i>
-            <span>ATD APTD Certified</span>
+            <i class="fas fa-check-circle text-blue-500 w-6"></i>
+            <span>Lean & Agile Certified</span>
           </div>
           <div class="flex items-center text-sm">
-            <i class="fas fa-bolt text-blue-500 w-6"></i>
-            <span>Agile Certified</span>
+            <i class="fas fa-graduation-cap text-blue-500 w-6"></i>
+            <span>B.S. Digital Media Production</span>
           </div>
         </div>
       </div>
 
       <div class="lg:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-4">
         <div class="glass-card p-4 text-center">
+          <div class="text-3xl metric-value mb-1">12.4%</div>
+          <div class="text-xs text-gray-500 uppercase tracking-wider">Conv. Rate Increase</div>
+        </div>
+        <div class="glass-card p-4 text-center">
+          <div class="text-3xl metric-value mb-1">130%</div>
+          <div class="text-xs text-gray-500 uppercase tracking-wider">Avg Quota Attainment</div>
+        </div>
+        <div class="glass-card p-4 text-center">
+          <div class="text-3xl metric-value mb-1">21</div>
+          <div class="text-xs text-gray-500 uppercase tracking-wider">Trainers Certified (2025)</div>
+        </div>
+        <div class="glass-card p-4 text-center">
+          <div class="text-3xl metric-value mb-1">90%+</div>
+          <div class="text-xs text-gray-500 uppercase tracking-wider">Medallia NPS Avg</div>
+        </div>
+        <div class="glass-card p-4 text-center">
+          <div class="text-3xl metric-value mb-1">267</div>
+          <div class="text-xs text-gray-500 uppercase tracking-wider">Locations Supported</div>
+        </div>
+        <div class="glass-card p-4 text-center">
           <div class="text-3xl metric-value mb-1">700+</div>
-          <div class="text-xs text-gray-500 uppercase tracking-wider">New Hires Onboarded</div>
+          <div class="text-xs text-gray-500 uppercase tracking-wider">Personal Onboards</div>
         </div>
-        <div class="glass-card p-4 text-center">
-          <div class="text-3xl metric-value mb-1">20%</div>
-          <div class="text-xs text-gray-500 uppercase tracking-wider">Ramp-Time Reduction</div>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-in">
+      <div class="glass-card p-6">
+        <h3 class="text-white text-xl font-bold mb-6 italic">Competency Profile</h3>
+        <div class="h-64">
+          <canvas id="radarChart"></canvas>
         </div>
-        <div class="glass-card p-4 text-center">
-          <div class="text-3xl metric-value mb-1">500+</div>
-          <div class="text-xs text-gray-500 uppercase tracking-wider">Learners Per Year</div>
+      </div>
+
+      <div class="glass-card p-6">
+        <h3 class="text-white text-xl font-bold mb-6 italic">Strategic Focus Areas</h3>
+        <div class="space-y-5 mt-4">
+          <div>
+            <div class="flex justify-between text-sm mb-1"><span>Sales Strategy & Execution</span><span>92%</span></div>
+            <div class="w-full bg-gray-800 h-2 rounded-full"><div class="bg-blue-500 h-2 rounded-full" style="width: 92%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-1"><span>Leadership Development</span><span>97%</span></div>
+            <div class="w-full bg-gray-800 h-2 rounded-full"><div class="bg-blue-400 h-2 rounded-full" style="width: 97%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-1"><span>Measurement & Analytics</span><span>90%</span></div>
+            <div class="w-full bg-gray-800 h-2 rounded-full"><div class="bg-blue-300 h-2 rounded-full" style="width: 90%"></div></div>
+          </div>
         </div>
-        <div class="glass-card p-4 text-center">
-          <div class="text-3xl metric-value mb-1">150+</div>
-          <div class="text-xs text-gray-500 uppercase tracking-wider">Facilitated Sessions/Yr</div>
-        </div>
-        <div class="glass-card p-4 text-center">
-          <div class="text-3xl metric-value mb-1">13+</div>
-          <div class="text-xs text-gray-500 uppercase tracking-wider">Years Experience</div>
-        </div>
-        <div class="glass-card p-4 text-center">
-          <div class="text
+      </div>
+    </section>
+
+    <footer class="text-center py-12 border-t border-gray-800 fade-in">
+      <p class="text-gray-500 text-sm italic">Erik James Walter • Senior Trainer • Verizon Enablement</p>
+    </footer>
+  </main>
+
+  <script>
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, observerOptions);
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    const radarCtx = document.getElementById('radarChart').getContext('2d');
+    new Chart(radarCtx, {
+      type: 'radar',
+      data: {
+        labels: ['Onboarding', 'Facilitation', 'Sales Strategy', 'Leadership Dev', 'Program Scaling', 'Measurement'],
+        datasets: [{
+          label: 'Skill Level',
+          // Data points aligned strictly to the labels array above
+          data: [95, 98, 92, 97, 94, 90], 
+          fill: true,
+          backgroundColor: 'rgba(88, 166, 255, 0.2)',
+          borderColor: '#58a6ff',
+          pointBackgroundColor: '#58a6ff',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          r: {
+            min: 0,
+            max: 100,
+            angleLines: { color: '#30363d' },
+            grid: { color: '#30363d' },
+            pointLabels: { color: '#8b949e', font: { size: 11, weight: 'bold' } },
+            ticks: { display: false, stepSize: 20 }
+          }
+        },
+        plugins: { legend: { display: false } }
+      }
+    });
+  </script>
+</body>
+</html>
