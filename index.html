@@ -75,8 +75,8 @@
         <div class="text-xs text-gray-500 uppercase tracking-wider">Ramp-Time Reduction</div>
       </div>
       <div class="glass-card p-4 text-center">
-        <div class="text-3xl metric-value mb-1">90%+</div>
-        <div class="text-xs text-gray-500 uppercase tracking-wider">Medallia NPS Score</div>
+        <div class="text-3xl metric-value mb-1">15.1%</div>
+        <div class="text-xs text-gray-500 uppercase tracking-wider">Gross Add Increase (60d)</div>
       </div>
       <div class="glass-card p-4 text-center">
         <div class="text-3xl metric-value mb-1">21</div>
@@ -126,14 +126,14 @@
       </h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="glass-card p-6 border-l-4 border-cyan-500">
-          <span class="accent-cyan text-xs font-bold uppercase tracking-widest">National Impact</span>
-          <h4 class="text-white font-bold mt-2 mb-3 text-lg italic">12.4% Conversion Lift</h4>
-          <p class="text-sm text-gray-400">Partnered with retail leaders to modernize floor management training, yielding a nationwide increase in conversion rates within 180 days.</p>
+          <span class="accent-cyan text-xs font-bold uppercase tracking-widest">Performance Strategy</span>
+          <h4 class="text-white font-bold mt-2 mb-3 text-lg italic">15.1% Gross Add Increase</h4>
+          <p class="text-sm text-gray-400">Deployed specialized curriculum that grew gross adds from 20.6 to 23.7 per 40-hr FTE within 60 days of rollout.</p>
         </div>
         <div class="glass-card p-6 border-l-4 border-cyan-500">
-          <span class="accent-cyan text-xs font-bold uppercase tracking-widest">Performance Strategy</span>
-          <h4 class="text-white font-bold mt-2 mb-3 text-lg italic">Book of Business Growth</h4>
-          <p class="text-sm text-gray-400">Designed training that increased gross adds per 40-hour FTE from 20.6 to 23.7 within 60 days of program deployment.</p>
+          <span class="accent-cyan text-xs font-bold uppercase tracking-widest">National Impact</span>
+          <h4 class="text-white font-bold mt-2 mb-3 text-lg italic">12.4% Conversion Lift</h4>
+          <p class="text-sm text-gray-400">Partnered with retail leaders to modernize floor management training, yielding a nationwide increase in conversion rates.</p>
         </div>
         <div class="glass-card p-6 border-l-4 border-cyan-500">
           <span class="accent-cyan text-xs font-bold uppercase tracking-widest">Enablement Scaling</span>
@@ -146,9 +146,9 @@
           <p class="text-sm text-gray-400">Onboarded 700+ employees using redesigned curriculum focused on accelerating role readiness.</p>
         </div>
         <div class="glass-card p-6 border-l-4 border-cyan-500">
-          <span class="accent-cyan text-xs font-bold uppercase tracking-widest">Leadership Recognition</span>
+          <span class="accent-cyan text-xs font-bold uppercase tracking-widest">Service Excellence</span>
           <h4 class="text-white font-bold mt-2 mb-3 text-lg italic">90%+ Medallia NPS</h4>
-          <p class="text-sm text-gray-400">Ranked as 1 of only 16 stores nationwide for customer excellence, earning the Excellence in Leadership award.</p>
+          <p class="text-sm text-gray-400">Maintained elite customer satisfaction scores across market districts, resulting in national store recognition.</p>
         </div>
         <div class="glass-card p-6 border-l-4 border-cyan-500">
           <span class="accent-cyan text-xs font-bold uppercase tracking-widest">Talent Development</span>
@@ -173,7 +173,6 @@
   </main>
 
   <script>
-    // Smooth Animation Trigger
     const observerOptions = { threshold: 0.1 };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -182,7 +181,6 @@
     }, observerOptions);
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // COMPETENCY RADAR CHART CONFIGURATION
     const radarCtx = document.getElementById('radarChart').getContext('2d');
     new Chart(radarCtx, {
       type: 'radar',
@@ -190,7 +188,7 @@
         labels: ['Onboarding', 'Facilitation', 'Sales Strategy', 'Leadership Dev', 'Program Scaling', 'Measurement'],
         datasets: [{
           label: 'Skill Proficiency',
-          data: [90, 90, 87, 76, 94, 81], // Adjusted data to reflect user assessments
+          data: [90, 90, 87, 76, 94, 81], 
           fill: true,
           backgroundColor: 'rgba(0, 242, 255, 0.15)',
           borderColor: '#00f2ff',
