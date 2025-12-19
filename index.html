@@ -37,11 +37,6 @@
       color: #58a6ff;
       font-weight: 800;
     }
-    .accent-gradient {
-      background: linear-gradient(90deg, #58a6ff, #1f6feb);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
   </style>
 </head>
 
@@ -71,7 +66,7 @@
       <div class="lg:col-span-1 glass-card p-6">
         <h3 class="text-white text-xl font-bold mb-4 border-b border-gray-700 pb-2">Professional Summary</h3>
         <p class="text-gray-400 leading-relaxed text-sm">
-          Senior Learning and Enablement professional with 8+ years of experience delivering scalable onboarding, sales enablement, and leadership development programs within a Fortune 500 environment. Proven ability to translate business strategy into practical learning experiences that accelerate ramp time and improve performance metrics.
+          Senior Learning and Enablement professional with 8+ years of experience delivering scalable onboarding, sales enablement, and leadership development programs within a Fortune 500 environment. Supported by 13+ years of progressive experience at Verizon across sales leadership and enterprise training roles.
         </p>
 
         <div class="mt-6 space-y-3">
@@ -158,8 +153,7 @@
 
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-in">
       <div class="glass-card p-6">
-        <h3 class="text-white font-bold mb-4">Territory Focus</h3>
-
+        <h3 class="text-white font-bold mb-4">Strategic Focus Areas</h3>
         <div class="space-y-4">
           <div>
             <div class="flex justify-between text-sm mb-1">
@@ -170,7 +164,6 @@
               <div class="bg-blue-500 h-2 rounded-full" style="width: 30%"></div>
             </div>
           </div>
-
           <div>
             <div class="flex justify-between text-sm mb-1">
               <span>Sales and Leadership Enablement</span>
@@ -180,7 +173,6 @@
               <div class="bg-blue-400 h-2 rounded-full" style="width: 30%"></div>
             </div>
           </div>
-
           <div>
             <div class="flex justify-between text-sm mb-1">
               <span>Stakeholder Partnership</span>
@@ -190,7 +182,6 @@
               <div class="bg-blue-300 h-2 rounded-full" style="width: 20%"></div>
             </div>
           </div>
-
           <div>
             <div class="flex justify-between text-sm mb-1">
               <span>Measurement and Optimization</span>
@@ -230,17 +221,10 @@
     new Chart(radarCtx, {
       type: 'radar',
       data: {
-        labels: [
-          'Onboarding',
-          'Facilitation',
-          'Sales Strategy',
-          'Leadership Dev',
-          'Program Scaling',
-          'Measurement'
-        ],
+        labels: ['Onboarding', 'Facilitation', 'Sales Strategy', 'Leadership Dev', 'Program Scaling', 'Measurement'],
         datasets: [{
           label: 'Competency Level',
-          data: [95, 95, 88, 97, 92, 95], // Adjusted Measurement to 95
+          data: [95, 95, 90, 97, 92, 95], // Adjusted Sales Strategy to 90
           fill: true,
           backgroundColor: 'rgba(88, 166, 255, 0.2)',
           borderColor: '#58a6ff',
