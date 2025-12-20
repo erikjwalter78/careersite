@@ -8,117 +8,123 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <style>
-    body { background-color: #0a0a0a; color: #a3a3a3; }
+    body { background-color: #0a0a0a; color: #a3a3a3; font-family: 'Inter', sans-serif; }
     .glass-card { background-color: #141414; border: 1px solid #262626; border-radius: 8px; }
     .metric-value { color: #f59e0b; font-weight: 800; }
+    .strength-tag { border-left: 3px solid #f59e0b; background: #1a1a1a; }
   </style>
 </head>
-<body class="p-6 md:p-12">
+<body class="p-4 md:p-12">
 
   <header class="max-w-6xl mx-auto mb-10">
-    <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-6">
       <div>
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">Erik James Walter</h1>
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-2">Erik James Walter</h1>
         <p class="text-xl text-amber-500 uppercase tracking-widest font-light">Senior Learning & Enablement</p>
-        <div class="flex gap-6 mt-4 text-sm text-zinc-500">
+        <div class="flex flex-wrap gap-4 mt-4 text-sm text-zinc-500">
           <span><i class="fas fa-map-marker-alt mr-2 text-amber-500"></i>Pennsylvania, USA</span>
           <span><i class="fas fa-history mr-2 text-amber-500"></i>13 Years Verizon Experience</span>
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-2 mt-6 md:mt-0">
-        <span class="px-3 py-1 border border-amber-500/30 bg-amber-500/10 text-amber-500 text-[10px] font-bold uppercase rounded">Performance Consulting</span>
-        <span class="px-3 py-1 border border-amber-500/30 bg-amber-500/10 text-amber-500 text-[10px] font-bold uppercase rounded">Leadership Dev</span>
-        <span class="px-3 py-1 border border-amber-500/30 bg-amber-500/10 text-amber-500 text-[10px] font-bold uppercase rounded">Strategic Enablement</span>
-        <span class="px-4 py-2 border border-amber-500/30 bg-amber-500/10 text-amber-500 text-[10px] font-bold uppercase rounded">Operational Readiness</span>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-500 text-[10px] font-bold uppercase rounded">Performance Consulting</span>
+        <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-500 text-[10px] font-bold uppercase rounded">Leadership Dev</span>
+        <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-500 text-[10px] font-bold uppercase rounded">Strategic Enablement</span>
+        <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-500 text-[10px] font-bold uppercase rounded">Operational Readiness</span>
       </div>
     </div>
   </header>
 
   <main class="max-w-6xl mx-auto space-y-8">
     
-    <section class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <section class="grid grid-cols-2 lg:grid-cols-4 gap-4">
       <div class="glass-card p-6 text-center">
         <div class="text-3xl metric-value mb-1">12.4%</div>
-        <div class="text-[10px] uppercase font-bold text-zinc-500">National Conversion Lift</div>
+        <div class="text-[9px] uppercase font-bold text-zinc-500 tracking-tighter">National Conversion Lift</div>
       </div>
       <div class="glass-card p-6 text-center">
         <div class="text-3xl metric-value mb-1">20%</div>
-        <div class="text-[10px] uppercase font-bold text-zinc-500">Ramp-Time Reduction</div>
+        <div class="text-[9px] uppercase font-bold text-zinc-500 tracking-tighter">Ramp-Time Reduction</div>
       </div>
       <div class="glass-card p-6 text-center">
         <div class="text-3xl metric-value mb-1">15.1%</div>
-        <div class="text-[10px] uppercase font-bold text-zinc-500">Gross Add Increase (60d)</div>
+        <div class="text-[9px] uppercase font-bold text-zinc-500 tracking-tighter">Gross Add Increase (60d)</div>
       </div>
       <div class="glass-card p-6 text-center">
         <div class="text-3xl metric-value mb-1">21</div>
-        <div class="text-[10px] uppercase font-bold text-zinc-500">Trainers Certified (2025)</div>
+        <div class="text-[9px] uppercase font-bold text-zinc-500 tracking-tighter">Trainers Certified (2025)</div>
       </div>
     </section>
 
-    <section class="glass-card p-8 border-l-4 border-amber-500">
-      <div class="flex justify-between items-center mb-4">
+    <section class="glass-card p-6 md:p-8 border-l-4 border-amber-500">
+      <div class="flex flex-col md:flex-row justify-between md:items-center mb-6 gap-2">
         <h3 class="text-white font-bold uppercase tracking-widest">Professional Summary</h3>
-        <span class="text-[10px] font-bold text-amber-500 border border-amber-500/40 px-2 py-1 rounded">PART OF BRANDON HALL GOLD WINNING ORGANIZATION</span>
+        <span class="text-[10px] font-bold text-amber-500 border border-amber-500/40 px-2 py-1 rounded self-start">BRANDON HALL GOLD ORGANIZATION</span>
       </div>
-      <p class="text-zinc-300 leading-relaxed font-light">
+      <p class="text-zinc-300 leading-relaxed text-base md:text-lg font-light">
         Senior Learning and Enablement professional with <strong>8+ years</strong> of experience delivering scalable onboarding, sales enablement, and leadership development programs within a Fortune 500 environment, supported by <strong>13+ years</strong> of progressive experience at Verizon Communications. Proven ability to translate business strategy into practical learning experiences that accelerate ramp time and improve performance metrics.
       </p>
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div class="glass-card p-8">
         <h3 class="text-white font-bold uppercase mb-6 text-center tracking-widest">Competency Profile</h3>
-        <div class="h-72"><canvas id="radarChart"></canvas></div>
+        <div class="h-64 md:h-80"><canvas id="radarChart"></canvas></div>
       </div>
+      
       <div class="glass-card p-8">
-        <h3 class="text-white font-bold uppercase mb-8 tracking-widest">Strategic Value Proposition</h3>
-        <div class="space-y-6">
-          <div class="flex gap-4">
-            <i class="fas fa-handshake text-amber-500 text-xl"></i>
-            <div>
-              <h4 class="text-white font-bold text-sm uppercase">Performance Consulting</h4>
-              <p class="text-xs text-zinc-500 mt-1">Bridging the gap between business strategy and execution through Training Needs Analysis (TNA).</p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <i class="fas fa-bolt text-amber-500 text-xl"></i>
-            <div>
-              <h4 class="text-white font-bold text-sm uppercase">Operational Readiness</h4>
-              <p class="text-xs text-zinc-500 mt-1">Standardizing facilitation and certifying trainer networks for scalable deployment.</p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <i class="fas fa-crosshairs text-amber-500 text-xl"></i>
-            <div>
-              <h4 class="text-white font-bold text-sm uppercase">Behavioral Transformation</h4>
-              <p class="text-xs text-zinc-500 mt-1">Driving sustained KPI growth by aligning performance with structured coaching.</p>
-            </div>
-          </div>
+        <h3 class="text-white font-bold uppercase mb-6 tracking-widest">CliftonStrengths Top 5</h3>
+        <p class="text-[10px] text-zinc-500 mb-6 uppercase tracking-widest italic">Strategic Thinking & Executing Profile</p>
+        <div class="space-y-3">
+          <div class="strength-tag p-3 text-white text-sm font-bold flex justify-between items-center">1. STRATEGIC <i class="fas fa-chess-knight opacity-20"></i></div>
+          <div class="strength-tag p-3 text-white text-sm font-bold flex justify-between items-center">2. INTELLECTION <i class="fas fa-brain opacity-20"></i></div>
+          <div class="strength-tag p-3 text-white text-sm font-bold flex justify-between items-center">3. FUTURISTIC <i class="fas fa-eye opacity-20"></i></div>
+          <div class="strength-tag p-3 text-white text-sm font-bold flex justify-between items-center">4. RESTORATIVE <i class="fas fa-wrench opacity-20"></i></div>
+          <div class="strength-tag p-3 text-white text-sm font-bold flex justify-between items-center">5. ACHIEVER <i class="fas fa-fire opacity-20"></i></div>
         </div>
       </div>
     </section>
 
-    <section class="pb-12">
-      <h3 class="text-white font-bold mb-6 uppercase tracking-widest flex items-center">
+    <section class="pb-20">
+      <h3 class="text-white font-bold mb-8 uppercase tracking-widest flex items-center">
         <i class="fas fa-trophy text-amber-500 mr-3"></i> Major Project Wins
       </h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="glass-card p-6 border-t-2 border-amber-500">
-          <h4 class="text-white font-bold mb-2">15.1% Gross Add Increase</h4>
-          <p class="text-xs text-zinc-500 leading-relaxed">Deployed specialized curriculum that grew gross adds from 20.6 to 23.7 per 40-hr FTE.</p>
+          <h4 class="text-white font-bold mb-3">15.1% Gross Add Increase</h4>
+          <p class="text-sm text-zinc-500 leading-relaxed font-light">Deployed specialized curriculum that grew gross adds from 20.6 to 23.7 per 40-hr FTE within 60 days of rollout.</p>
         </div>
         <div class="glass-card p-6 border-t-2 border-amber-500">
-          <h4 class="text-white font-bold mb-2">12.4% Conversion Lift</h4>
-          <p class="text-xs text-zinc-500 leading-relaxed">Partnered with retail leaders to modernize floor management training nationwide.</p>
+          <h4 class="text-white font-bold mb-3">12.4% Conversion Lift</h4>
+          <p class="text-sm text-zinc-500 leading-relaxed font-light">Partnered with retail leaders to modernize floor management training nationwide.</p>
         </div>
         <div class="glass-card p-6 border-t-2 border-amber-500">
-          <h4 class="text-white font-bold mb-2">20% Ramp-Time Reduction</h4>
-          <p class="text-xs text-zinc-500 leading-relaxed">Onboarded 700+ employees using redesigned curriculum for role readiness.</p>
+          <h4 class="text-white font-bold mb-3">Master Trainer (2025)</h4>
+          <p class="text-sm text-zinc-500 leading-relaxed font-light">Certifying 21 trainers for the "Retail Ready" program to ensure scalable enterprise onboarding.</p>
+        </div>
+        <div class="glass-card p-6 border-t-2 border-amber-500">
+          <h4 class="text-white font-bold mb-3">20% Ramp-Time Reduction</h4>
+          <p class="text-sm text-zinc-500 leading-relaxed font-light">Onboarded 700+ employees using redesigned curriculum focused on accelerating role readiness.</p>
+        </div>
+        <div class="glass-card p-6 border-t-2 border-amber-500">
+          <h4 class="text-white font-bold mb-3">90%+ Medallia NPS</h4>
+          <p class="text-sm text-zinc-500 leading-relaxed font-light">Maintained elite CX scores across districts, resulting in consistent national recognition.</p>
+        </div>
+        <div class="glass-card p-6 border-t-2 border-amber-500">
+          <h4 class="text-white font-bold mb-3">8 Leadership Promotions</h4>
+          <p class="text-sm text-zinc-500 leading-relaxed font-light">Coached and developed direct reports into management roles through structured skill growth.</p>
         </div>
       </div>
     </section>
-
   </main>
+
+  <footer class="text-center py-10 border-t border-zinc-900">
+    <div class="flex justify-center gap-8 mb-4">
+      <a href="https://www.linkedin.com/in/erik-walter-67427439a" class="text-zinc-500 hover:text-amber-500"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="mailto:ErikjWalter78@gmail.com" class="text-zinc-500 hover:text-amber-500"><i class="fas fa-envelope fa-2x"></i></a>
+    </div>
+    <p class="text-zinc-600 text-[10px] uppercase tracking-widest">Erik James Walter • Verizon Enablement Leader</p>
+  </footer>
 
   <script>
     const ctx = document.getElementById('radarChart').getContext('2d');
@@ -127,17 +133,18 @@
       data: {
         labels: ['Onboarding', 'Facilitation', 'Sales Strategy', 'Leadership Dev', 'Program Scaling', 'Measurement'],
         datasets: [{
-          // EXACT RESTORED VALUES
           data: [90, 90, 87, 76, 94, 81], 
           backgroundColor: 'rgba(245, 158, 11, 0.1)',
           borderColor: '#f59e0b',
-          borderWidth: 2,
-          pointBackgroundColor: '#f59e0b'
+          pointBackgroundColor: '#f59e0b',
+          borderWidth: 2
         }]
       },
       options: {
-        scales: { r: { grid: { color: '#262626' }, angleLines: { color: '#262626' }, pointLabels: { color: '#737373', font: { size: 10 } }, ticks: { display: false }, min: 0, max: 100 } },
-        plugins: { legend: { display: false } }
+        scales: { r: { grid: { color: '#262626' }, angleLines: { color: '#262626' }, pointLabels: { color: '#737373', font: { size: 9, weight: 'bold' } }, ticks: { display: false }, min: 0, max: 100 } },
+        plugins: { legend: { display: false } },
+        responsive: true,
+        maintainAspectRatio: false
       }
     });
   </script>
