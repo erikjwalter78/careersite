@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Erik James Walter | Senior Learning & Enablement</title>
+  <title>Erik James Walter | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -12,47 +12,50 @@
     .glass-card { background-color: #141414; border: 1px solid #262626; border-radius: 8px; }
     .metric-value { color: #f59e0b; font-weight: 800; }
     .strength-tag { border-left: 3px solid #f59e0b; background: #1a1a1a; }
+    .skill-label { color: #f59e0b; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; text-align: center; }
   </style>
 </head>
 <body class="p-4 md:p-12">
 
   <header class="max-w-6xl mx-auto mb-10">
-    <div class="flex flex-col md:flex-row justify-between items-start gap-6">
-      <div>
-        <h1 class="text-4xl md:text-6xl font-bold text-white mb-2 tracking-tight">Erik James Walter</h1>
-        <p class="text-xl text-amber-500 uppercase tracking-widest font-light">Senior Learning & Enablement</p>
-        <div class="flex flex-wrap gap-4 mt-4 text-sm text-zinc-500">
-          <span><i class="fas fa-map-marker-alt mr-2 text-amber-500"></i>Pennsylvania, USA</span>
-          <span><i class="fas fa-history mr-2 text-amber-500"></i>13 Years Verizon Experience</span>
-        </div>
-      </div>
-      <div class="flex flex-wrap gap-2">
-        <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-500 text-[10px] font-bold uppercase rounded">Performance Consulting</span>
-        <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-500 text-[10px] font-bold uppercase rounded">Leadership Dev</span>
-        <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-500 text-[10px] font-bold uppercase rounded">Strategic Enablement</span>
-        <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-500 text-[10px] font-bold uppercase rounded">Operational Readiness</span>
-      </div>
+    <h1 class="text-4xl md:text-6xl font-bold text-white mb-2 tracking-tight">Erik James Walter</h1>
+    <p class="text-xl text-amber-500 uppercase tracking-widest font-light">Senior Learning & Enablement</p>
+    <div class="flex flex-wrap gap-4 mt-4 text-sm text-zinc-500">
+      <span><i class="fas fa-map-marker-alt mr-2 text-amber-500"></i>Pennsylvania, USA</span>
+      <span><i class="fas fa-history mr-2 text-amber-500"></i>13 Years Verizon Experience</span>
     </div>
   </header>
 
   <main class="max-w-6xl mx-auto space-y-8">
     
     <section class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-      <div class="glass-card p-6 text-center">
-        <div class="text-3xl metric-value mb-1">12.4%</div>
-        <div class="text-[9px] uppercase font-bold text-zinc-500 tracking-tighter">National Conversion Lift</div>
+      <div class="flex flex-col">
+        <div class="skill-label">Performance Consulting</div>
+        <div class="glass-card p-6 text-center h-full">
+          <div class="text-3xl metric-value mb-1">12.4%</div>
+          <div class="text-[9px] uppercase font-bold text-zinc-500 tracking-tighter">National Conversion Lift</div>
+        </div>
       </div>
-      <div class="glass-card p-6 text-center">
-        <div class="text-3xl metric-value mb-1">20%</div>
-        <div class="text-[9px] uppercase font-bold text-zinc-500 tracking-tighter">Ramp-Time Reduction</div>
+      <div class="flex flex-col">
+        <div class="skill-label">Operational Readiness</div>
+        <div class="glass-card p-6 text-center h-full">
+          <div class="text-3xl metric-value mb-1">20%</div>
+          <div class="text-[9px] uppercase font-bold text-zinc-500 tracking-tighter">Ramp-Time Reduction</div>
+        </div>
       </div>
-      <div class="glass-card p-6 text-center">
-        <div class="text-3xl metric-value mb-1">15.1%</div>
-        <div class="text-[9px] uppercase font-bold text-zinc-500 tracking-tighter">Gross Add Increase (60d)</div>
+      <div class="flex flex-col">
+        <div class="skill-label">Strategic Enablement</div>
+        <div class="glass-card p-6 text-center h-full">
+          <div class="text-3xl metric-value mb-1">15.1%</div>
+          <div class="text-[9px] uppercase font-bold text-zinc-500 tracking-tighter">Gross Add Increase (60d)</div>
+        </div>
       </div>
-      <div class="glass-card p-6 text-center">
-        <div class="text-3xl metric-value mb-1">21</div>
-        <div class="text-[9px] uppercase font-bold text-zinc-500 tracking-tighter">Trainers Certified (2025)</div>
+      <div class="flex flex-col">
+        <div class="skill-label">Leadership Dev</div>
+        <div class="glass-card p-6 text-center h-full">
+          <div class="text-3xl metric-value mb-1">21</div>
+          <div class="text-[9px] uppercase font-bold text-zinc-500 tracking-tighter">Trainers Certified (2025)</div>
+        </div>
       </div>
     </section>
 
