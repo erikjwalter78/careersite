@@ -3,12 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <meta property="og:title" content="Erik James Walter | Interactive Performance Portfolio">
-  <meta property="og:description" content="Strategic Enablement leader driving 15.1% Gross Add growth and 12.4% conversion lifts.">
-  <meta property="og:url" content="https://erikjwalter78.github.io/careersite/">
-  <meta property="og:type" content="website">
-
   <title>Erik James Walter | Senior Learning & Enablement</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -16,22 +10,22 @@
 
   <style>
     :root {
-      --bg: #0f172a; /* Deep Slate */
-      --card-bg: #1e293b;
-      --card-border: #334155;
-      --accent: #22d3ee; /* Bright Cyan */
-      --text-main: #f8fafc;
-      --text-dim: #94a3b8;
+      --bg: #111111; /* True dark background */
+      --card-bg: #1c1c1c; /* Charcoal cards */
+      --card-border: #2d2d2d;
+      --accent: #f59e0b; /* Executive Orange/Amber */
+      --text-main: #ffffff;
+      --text-dim: #a1a1aa;
     }
     body { background-color: var(--bg); color: var(--text-dim); font-family: 'Inter', sans-serif; }
-    .glass-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; transition: all 0.3s ease; }
+    .glass-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 8px; transition: all 0.3s ease; }
     .glass-card:hover { border-color: var(--accent); transform: translateY(-2px); }
     .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
-    .metric-value { color: var(--accent); font-weight: 800; letter-spacing: -1px; }
-    .accent-color { color: var(--accent); }
-    .strength-card { background: #0f172a; border: 1px solid var(--card-border); border-top: 3px solid var(--accent); }
-    .pill { background: rgba(34, 211, 238, 0.1); border: 1px solid rgba(34, 211, 238, 0.3); color: var(--accent); }
+    .metric-value { color: var(--accent); font-weight: 800; }
+    .strength-card { background: #111111; border: 1px solid var(--card-border); border-left: 4px solid var(--accent); }
+    .tech-pill { background: #262626; border: 1px solid #404040; color: #d4d4d4; padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; }
+    .pill-accent { background: rgba(245, 158, 11, 0.1); border: 1px solid var(--accent); color: var(--accent); }
   </style>
 </head>
 
@@ -39,18 +33,18 @@
   <header class="max-w-6xl mx-auto mb-12 fade-in">
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
       <div>
-        <h1 class="text-4xl md:text-6xl font-bold text-white mb-3 tracking-tight">Erik James Walter</h1>
-        <p class="text-xl md:text-2xl text-cyan-400 font-light uppercase tracking-widest">Senior Learning & Enablement</p>
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-2 tracking-tight">Erik James Walter</h1>
+        <p class="text-xl md:text-2xl text-amber-500 font-light uppercase tracking-[0.2em]">Senior Learning & Enablement</p>
         <div class="flex gap-6 mt-6 text-sm">
-          <span><i class="fas fa-map-marker-alt mr-2 accent-color"></i>Pennsylvania, USA</span>
-          <span><i class="fas fa-history mr-2 accent-color"></i>13 Years Verizon</span>
+          <span><i class="fas fa-map-marker-alt mr-2 text-amber-500"></i>Pennsylvania, USA</span>
+          <span><i class="fas fa-history mr-2 text-amber-500"></i>13 Years Verizon</span>
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-3 w-full md:w-auto">
-        <span class="px-4 py-2 pill rounded-lg text-[10px] text-center font-bold uppercase tracking-wider">Performance Consulting</span>
-        <span class="px-4 py-2 pill rounded-lg text-[10px] text-center font-bold uppercase tracking-wider">Leadership Dev</span>
-        <span class="px-4 py-2 pill rounded-lg text-[10px] text-center font-bold uppercase tracking-wider">Strategic Enablement</span>
-        <span class="px-4 py-2 pill rounded-lg text-[10px] text-center font-bold uppercase tracking-wider">Operational Readiness</span>
+      <div class="grid grid-cols-2 gap-2 w-full md:w-auto">
+        <span class="px-4 py-2 pill-accent rounded text-[10px] text-center font-bold uppercase tracking-wider">Performance Consulting</span>
+        <span class="px-4 py-2 pill-accent rounded text-[10px] text-center font-bold uppercase tracking-wider">Leadership Dev</span>
+        <span class="px-4 py-2 pill-accent rounded text-[10px] text-center font-bold uppercase tracking-wider">Strategic Enablement</span>
+        <span class="px-4 py-2 pill-accent rounded text-[10px] text-center font-bold uppercase tracking-wider">Operational Readiness</span>
       </div>
     </div>
   </header>
@@ -60,61 +54,92 @@
     <section class="grid grid-cols-2 md:grid-cols-4 gap-4 fade-in">
       <div class="glass-card p-6 text-center">
         <div class="text-4xl metric-value mb-2">12.4%</div>
-        <div class="text-[10px] text-slate-400 uppercase tracking-[0.2em] font-bold">Conversion Lift</div>
+        <div class="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Conversion Lift</div>
       </div>
       <div class="glass-card p-6 text-center">
         <div class="text-4xl metric-value mb-2">20%</div>
-        <div class="text-[10px] text-slate-400 uppercase tracking-[0.2em] font-bold">Ramp Reduction</div>
+        <div class="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Ramp Reduction</div>
       </div>
       <div class="glass-card p-6 text-center">
         <div class="text-4xl metric-value mb-2">15.1%</div>
-        <div class="text-[10px] text-slate-400 uppercase tracking-[0.2em] font-bold">Gross Add Lift</div>
+        <div class="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Gross Add Lift</div>
       </div>
       <div class="glass-card p-6 text-center">
         <div class="text-4xl metric-value mb-2">21</div>
-        <div class="text-[10px] text-slate-400 uppercase tracking-[0.2em] font-bold">Trainers Certified</div>
+        <div class="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Trainers Certified</div>
       </div>
     </section>
 
     <section class="fade-in">
-      <div class="glass-card p-8 border-l-4 border-cyan-500">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
-            <h3 class="text-white text-xl font-bold uppercase tracking-wider italic">Professional Summary</h3>
-            <span class="text-cyan-400 font-bold text-xs uppercase tracking-widest"><i class="fas fa-award mr-2"></i> Brandon Hall Gold Organization</span>
+      <div class="glass-card p-8 border-l-4 border-amber-500">
+        <div class="flex justify-between items-center mb-6">
+            <h3 class="text-white text-xl font-bold uppercase tracking-widest">Professional Summary</h3>
+            <span class="text-amber-500 font-bold text-xs border border-amber-500/30 px-3 py-1 rounded"><i class="fas fa-award mr-2"></i> BRANDON HALL GOLD ORGANIZATION</span>
         </div>
-        <p class="text-slate-300 leading-relaxed text-lg font-light">
+        <p class="text-zinc-300 leading-relaxed text-lg font-light">
           Senior Learning and Enablement professional with <strong>8+ years</strong> of experience delivering scalable onboarding and leadership programs, supported by <strong>13+ years</strong> of progressive experience at Verizon.
         </p>
       </div>
     </section>
 
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-in">
+      <div class="glass-card p-6">
+        <h4 class="text-white text-xs font-bold uppercase tracking-widest mb-4 border-b border-zinc-800 pb-2">L&D Tech Stack</h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="tech-pill">Articulate 360</span>
+          <span class="tech-pill">Adobe Creative Cloud</span>
+          <span class="tech-pill">LMS Admin</span>
+          <span class="tech-pill">Smartsheet</span>
+          <span class="tech-pill">AI Prompting</span>
+        </div>
+      </div>
+      <div class="glass-card p-6">
+        <h4 class="text-white text-xs font-bold uppercase tracking-widest mb-4 border-b border-zinc-800 pb-2">Sales & Ops Tech</h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="tech-pill">Salesforce / CRM</span>
+          <span class="tech-pill">Medallia NPS</span>
+          <span class="tech-pill">Microsoft 365</span>
+          <span class="tech-pill">Tableau Analytics</span>
+        </div>
+      </div>
+      <div class="glass-card p-6">
+        <h4 class="text-white text-xs font-bold uppercase tracking-widest mb-4 border-b border-zinc-800 pb-2">Content Production</h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="tech-pill">Video Production</span>
+          <span class="tech-pill">Motion Graphics</span>
+          <span class="tech-pill">Graphic Design</span>
+          <span class="tech-pill">Script Writing</span>
+        </div>
+      </div>
+    </section>
+
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-in">
       <div class="glass-card p-8">
-        <h3 class="text-white text-xl font-bold mb-8 uppercase tracking-wider italic">Competency Profile</h3>
+        <h3 class="text-white text-xl font-bold mb-8 uppercase tracking-widest">Competency Profile</h3>
         <div class="h-80"><canvas id="radarChart"></canvas></div>
       </div>
       <div class="glass-card p-8">
-        <h3 class="text-white text-xl font-bold mb-8 uppercase tracking-wider italic">Strategic Value Proposition</h3>
+        <h3 class="text-white text-xl font-bold mb-8 uppercase tracking-widest">Strategic Value Proposition</h3>
         <div class="space-y-8">
           <div class="flex gap-5">
-            <div class="mt-1"><i class="fas fa-handshake accent-color text-2xl"></i></div>
+            <i class="fas fa-handshake text-amber-500 text-2xl"></i>
             <div>
               <h4 class="text-white font-bold text-sm uppercase tracking-widest">Performance Consulting</h4>
-              <p class="text-sm text-slate-400 mt-2 font-light">Bridging strategy and execution through Training Needs Analysis (TNA).</p>
+              <p class="text-sm text-zinc-500 mt-2 font-light">Bridging strategy and execution through Training Needs Analysis (TNA).</p>
             </div>
           </div>
           <div class="flex gap-5">
-            <div class="mt-1"><i class="fas fa-chart-line accent-color text-2xl"></i></div>
+            <i class="fas fa-chart-line text-amber-500 text-2xl"></i>
             <div>
               <h4 class="text-white font-bold text-sm uppercase tracking-widest">Operational Readiness</h4>
-              <p class="text-sm text-slate-400 mt-2 font-light">Certifying trainer networks for scalable, agile deployment.</p>
+              <p class="text-sm text-zinc-500 mt-2 font-light">Certifying trainer networks for scalable, agile deployment.</p>
             </div>
           </div>
           <div class="flex gap-5">
-            <div class="mt-1"><i class="fas fa-bullseye accent-color text-2xl"></i></div>
+            <i class="fas fa-bullseye text-amber-500 text-2xl"></i>
             <div>
               <h4 class="text-white font-bold text-sm uppercase tracking-widest">Behavioral Transformation</h4>
-              <p class="text-sm text-slate-400 mt-2 font-light">Driving KPI growth by aligning performance with structured coaching.</p>
+              <p class="text-sm text-zinc-500 mt-2 font-light">Driving KPI growth by aligning performance with structured coaching.</p>
             </div>
           </div>
         </div>
@@ -122,69 +147,69 @@
     </section>
 
     <section class="fade-in">
-      <h3 class="text-2xl font-bold text-white mb-8 uppercase tracking-widest italic text-center">Leadership DNA: CliftonStrengths</h3>
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-        <div class="strength-card p-6 rounded-xl text-center">
-            <i class="fas fa-chess-knight text-cyan-400 text-xl mb-4"></i>
-            <div class="text-xs font-bold text-white uppercase tracking-tighter">Strategic</div>
+      <h3 class="text-2xl font-bold text-white mb-8 uppercase tracking-widest text-center">Leadership DNA: CliftonStrengths</h3>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-3">
+        <div class="strength-card p-4 rounded text-center">
+            <div class="text-amber-500 text-[10px] font-bold mb-1">01</div>
+            <div class="text-xs font-bold text-white uppercase">Strategic</div>
         </div>
-        <div class="strength-card p-6 rounded-xl text-center">
-            <i class="fas fa-brain text-cyan-400 text-xl mb-4"></i>
-            <div class="text-xs font-bold text-white uppercase tracking-tighter">Intellection</div>
+        <div class="strength-card p-4 rounded text-center">
+            <div class="text-amber-500 text-[10px] font-bold mb-1">02</div>
+            <div class="text-xs font-bold text-white uppercase">Intellection</div>
         </div>
-        <div class="strength-card p-6 rounded-xl text-center">
-            <i class="fas fa-eye text-cyan-400 text-xl mb-4"></i>
-            <div class="text-xs font-bold text-white uppercase tracking-tighter">Futuristic</div>
+        <div class="strength-card p-4 rounded text-center">
+            <div class="text-amber-500 text-[10px] font-bold mb-1">03</div>
+            <div class="text-xs font-bold text-white uppercase">Futuristic</div>
         </div>
-        <div class="strength-card p-6 rounded-xl text-center">
-            <i class="fas fa-tools text-cyan-400 text-xl mb-4"></i>
-            <div class="text-xs font-bold text-white uppercase tracking-tighter">Restorative</div>
+        <div class="strength-card p-4 rounded text-center">
+            <div class="text-amber-500 text-[10px] font-bold mb-1">04</div>
+            <div class="text-xs font-bold text-white uppercase">Restorative</div>
         </div>
-        <div class="strength-card p-6 rounded-xl text-center">
-            <i class="fas fa-fire text-cyan-400 text-xl mb-4"></i>
-            <div class="text-xs font-bold text-white uppercase tracking-tighter">Achiever</div>
+        <div class="strength-card p-4 rounded text-center">
+            <div class="text-amber-500 text-[10px] font-bold mb-1">05</div>
+            <div class="text-xs font-bold text-white uppercase">Achiever</div>
         </div>
       </div>
     </section>
 
     <section class="fade-in pb-20">
       <h3 class="text-2xl font-bold text-white mb-8 flex items-center uppercase tracking-widest">
-        <i class="fas fa-trophy text-yellow-500 mr-4"></i> Major Project Wins
+        <i class="fas fa-trophy text-amber-500 mr-4"></i> Major Project Wins
       </h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="glass-card p-8 border-t-4 border-cyan-500">
+        <div class="glass-card p-8 border-t-2 border-amber-500">
           <h4 class="text-white font-bold mb-4 text-xl tracking-tight">15.1% Gross Add Increase</h4>
-          <p class="text-sm text-slate-400 font-light">Deployed specialized curriculum that grew gross adds per 40-hr FTE within 60 days.</p>
+          <p class="text-sm text-zinc-500 font-light">Deployed specialized curriculum that grew gross adds per 40-hr FTE within 60 days.</p>
         </div>
-        <div class="glass-card p-8 border-t-4 border-cyan-500">
+        <div class="glass-card p-8 border-t-2 border-amber-500">
           <h4 class="text-white font-bold mb-4 text-xl tracking-tight">12.4% Conversion Lift</h4>
-          <p class="text-sm text-slate-400 font-light">Modernized floor management training across nationwide retail districts.</p>
+          <p class="text-sm text-zinc-500 font-light">Modernized floor management training across nationwide retail districts.</p>
         </div>
-        <div class="glass-card p-8 border-t-4 border-cyan-500">
+        <div class="glass-card p-8 border-t-2 border-amber-500">
           <h4 class="text-white font-bold mb-4 text-xl tracking-tight">Master Trainer Ops</h4>
-          <p class="text-sm text-slate-400 font-light">Certifying 21 trainers for the "Retail Ready" program for scalable onboarding.</p>
+          <p class="text-sm text-zinc-500 font-light">Certifying 21 trainers for the "Retail Ready" program for scalable onboarding.</p>
         </div>
-        <div class="glass-card p-8 border-t-4 border-cyan-500">
+        <div class="glass-card p-8 border-t-2 border-amber-500">
           <h4 class="text-white font-bold mb-4 text-xl tracking-tight">20% Ramp Reduction</h4>
-          <p class="text-sm text-slate-400 font-light">Onboarded 700+ employees using redesigned curriculum focused on readiness.</p>
+          <p class="text-sm text-zinc-500 font-light">Onboarded 700+ employees using redesigned curriculum focused on readiness.</p>
         </div>
-        <div class="glass-card p-8 border-t-4 border-cyan-500">
+        <div class="glass-card p-8 border-t-2 border-amber-500">
           <h4 class="text-white font-bold mb-4 text-xl tracking-tight">90%+ Medallia NPS</h4>
-          <p class="text-sm text-slate-400 font-light">Maintained elite CX scores resulting in consistent national recognition.</p>
+          <p class="text-sm text-zinc-500 font-light">Maintained elite CX scores resulting in consistent national recognition.</p>
         </div>
-        <div class="glass-card p-8 border-t-4 border-cyan-500">
+        <div class="glass-card p-8 border-t-2 border-amber-500">
           <h4 class="text-white font-bold mb-4 text-xl tracking-tight">8 Leadership Promos</h4>
-          <p class="text-sm text-slate-400 font-light">Developed direct reports into management roles through structured skill growth.</p>
+          <p class="text-sm text-zinc-500 font-light">Developed direct reports into management roles through structured skill growth.</p>
         </div>
       </div>
     </section>
 
-    <footer class="text-center py-12 border-t border-slate-800">
+    <footer class="text-center py-12 border-t border-zinc-800">
       <div class="flex justify-center gap-10 mb-8">
-        <a href="https://www.linkedin.com/in/erik-walter-67427439a" target="_blank" class="text-slate-500 hover:text-cyan-400 transition-all"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="mailto:ErikjWalter78@gmail.com" class="text-slate-500 hover:text-cyan-400 transition-all"><i class="fas fa-envelope fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/erik-walter-67427439a" target="_blank" class="text-zinc-500 hover:text-amber-500 transition-all"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="mailto:ErikjWalter78@gmail.com" class="text-zinc-500 hover:text-amber-500 transition-all"><i class="fas fa-envelope fa-2x"></i></a>
       </div>
-      <p class="text-slate-600 text-xs font-bold uppercase tracking-[0.3em]">Erik James Walter</p>
+      <p class="text-zinc-600 text-xs font-bold uppercase tracking-[0.3em]">Erik James Walter</p>
     </footer>
   </main>
 
@@ -200,17 +225,17 @@
       data: {
         labels: ['Onboarding', 'Facilitation', 'Sales Strategy', 'Leadership Dev', 'Program Scaling', 'Measurement'],
         datasets: [{
-          // RESTORED ORIGINAL VALUES
+          // CORRECTED VALUES RESTORED
           data: [90, 90, 87, 76, 94, 81], 
           fill: true,
-          backgroundColor: 'rgba(34, 211, 238, 0.1)',
-          borderColor: '#22d3ee',
-          pointBackgroundColor: '#22d3ee',
+          backgroundColor: 'rgba(245, 158, 11, 0.1)',
+          borderColor: '#f59e0b',
+          pointBackgroundColor: '#f59e0b',
           pointBorderColor: '#fff',
           borderWidth: 2
         }]
       },
-      options: { responsive: true, maintainAspectRatio: false, scales: { r: { angleLines: { color: '#334155' }, grid: { color: '#334155' }, pointLabels: { color: '#94a3b8', font: { size: 10, weight: 'bold' } }, ticks: { display: false }, min: 0, max: 100 } }, plugins: { legend: { display: false } } }
+      options: { responsive: true, maintainAspectRatio: false, scales: { r: { angleLines: { color: '#2d2d2d' }, grid: { color: '#2d2d2d' }, pointLabels: { color: '#a1a1aa', font: { size: 10, weight: 'bold' } }, ticks: { display: false }, min: 0, max: 100 } }, plugins: { legend: { display: false } } }
     });
   </script>
 </body>
